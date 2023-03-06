@@ -5,7 +5,7 @@ void main() {
   runApp(const MyApp());
 }
 
-// Main App
+// REGION, MyApp
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// REGION, RandomWordState
 class RandomWordsState extends State<RandomWords> {
   // 변수 앞에 _가 붙으면 해당 파일안에서만 사용가능하다는 뜻
   final _suggestions = <WordPair>[]; // List
@@ -71,6 +72,7 @@ class RandomWordsState extends State<RandomWords> {
   }
 }
 
+// REGION, RandomWords
 // Stateful Widget = 변경가능한 상태를 가진 위젯
 class RandomWords extends StatefulWidget {
   @override
